@@ -1,0 +1,35 @@
+.class
+#div
+height in px
+width in %
+element{isky ander css ati}
+a: b; format
+rgb-a    0.7***  0-1 k bech hota
+element*number > element*number > element aisy hum nested jaty
+nav > li*3 > a == ek nav mai 3 list item each having an anchor tag
+
+color
+background-color: color;
+
+background-image: url(link);
+
+background-size: cover;
+background-size: contain;
+
+background-repeat: none;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+
+text-decoration: none;
+text-decoration: line-through;
+text-align: center;   //left right justify
+
+section
+nav
+opacity 
+
+humny in pe kam kiya
+
+
+
+

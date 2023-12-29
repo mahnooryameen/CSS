@@ -1,0 +1,154 @@
+.border{
+    /* padding: 0; */
+    box-sizing: border-box;
+    height: 50px;
+    border: 2px solid red;
+}
+
+/* universal set up */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* display */
+
+.display p{
+    display: inline;
+    border: 2px solid red;   /*huhuhu yahan mainy p tag ko block se inline*/
+}
+.display a{
+    display:block;   /* idher mainy a ko block banaya*/
+    border: 2px solid blue;   
+    margin-top: 5px;   /* yaha mainy feel kiya k border k uper wali jagah pe 5px gap agaya */
+    /* abhi jabky mainy uper margin zero diya lekin nechy wali css ne usko over ride krdiya */
+
+}
+.display span{
+    color: black;
+    background-color: yellow;
+    border: 2px solid blue;
+    padding: 10px 100px;
+    display: inline-block;  }
+
+    /* ab yeh heigth and width mai apny liye jagah mangy ga specially heigth */
+    /* yeh wala line break nh deta yani elemt can sit next to other element */
+    /* display inline and ismain yeh farq ha k is se hum heigth and width bhi set krskty */
+    /* inlilne in x axis jagah kam hui to next line se start ,,, block in y axis  */
+
+
+
+/* padding practice */
+.practice h5{
+    border: 2px solid black;
+    background-color: aqua;       /*yahan mainy alag alag inline and block elements ki maded se yeh smjha k inline kaisy kaisy override hoty */
+}
+
+.practice span{
+    border: 2px solid red;
+    background-color: yellow;    /* iski padding barhayi mainy, to pata chala yeh span uper nechy block walo mai ghus gaya */
+    padding: 10px 100px;
+}
+.practice h4{
+    border: 2px solid green;
+    background-color: blue;
+}
+
+
+/*   POSITION */
+
+.container{
+    border: 2px solid black;
+    background-color:rgb(207, 241, 226);
+    height: 1000px;
+    
+}
+
+.box{
+    border: 2px solid red;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#box2{
+    position: relative;
+    top: 10px;
+    left: 30px; 
+
+
+    position: absolute;
+    top: 50px;      solved: something wrong is happening here yeh body ko apna parent element maan rha ha jabky parent element iska div ha
+    right: 100px;   
+
+    position: sticky;
+    top: 50px;
+    left: 200px; 
+
+}
+
+/* Media Queries */
+
+.boxx{
+    border: 2px solid black;
+    text-align: center;
+    display: none;
+}
+
+
+
+/* 320px — 480px: Mobile devices. */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #box1{
+        display: block;
+        background-color: aqua;
+    }
+    
+}
+
+/* 481px — 768px: iPads, Tablets. */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #box2{
+        display: block;
+        background-color: yellow;
+
+    }
+    
+}
+
+
+/* 769px — 1024px: Small screens, laptops. */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #box3{
+
+        display: block;
+        background-color: rgb(23, 229, 171);
+        
+    }
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #box4{
+
+        display: block;
+        background-color: rgb(122, 24, 208);
+        
+    }
+    
+}
+
+
+
+
+
+

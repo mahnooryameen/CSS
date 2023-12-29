@@ -1,0 +1,208 @@
+/* ANIMATION */
+/* jis element pr animation deni ho ushi mai coding hogi */
+/* animation name deny se phir hum key frame mai element target krty hain */
+/* animation duration se hum tezi/ each time wali duration dety */
+/* animation iteration count main hum number ya infinite de skty hain */
+
+
+.container {
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+.box {
+    background-color: black;
+    position: relative;
+    animation-name: boxx;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    width: 200px;
+    height: 200px;
+
+}
+
+@keyframes boxx {
+    from {
+        width: 200px;
+
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ab hum seekhengy k kaisy animation ko ek had pe le ja kr rokna hai */
+/* iteration hum jitni dena chahain de skty hain usky bad end wali iteration k bad hum rukengy */
+
+.container {
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+.box {
+    background-color: black;
+    position: relative;
+    animation-name: boxx;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /*infinite bhi de skty*/
+    width: 200px;
+    height: 200px;
+
+    animation-fill-mode: forwards;
+    /* agay le ja kr rokny wala function*/
+
+
+
+}
+
+@keyframes boxx {
+    from {
+        width: 200px;
+
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* animation-timing-function   is se hum start and end animation ki tezi halki pan ko sambhal skty */
+/* animation-delay */
+.container {
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+.box {
+    background-color: black;
+    position: relative;
+    animation-name: boxx;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    /* infinite bhi de skty  */
+    width: 200px;
+    height: 200px;
+
+    animation-fill-mode: forwards;
+    /* agay le ja kr rokny wala function  */
+
+    animation-timing-function: ease-in;
+    /* shru main slow bad mai tez  */
+    animation-timing-function: ease-out;
+    /* shru main tez bad mai slow  */
+    animation-timing-function: ease-in-out;
+    /* shru main slow phir tez end mai slow  */
+
+
+    animation-delay: 3s;
+    /* iska matlab itny second k baa hamary browser pe yeh animation start hogi */
+}
+
+@keyframes boxx {
+    from {
+        width: 200px;
+
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* ab hum percentage se animation krengy code will be in keyframe and in percentage */
+/* percentage means k itna percent animation complet hony pe yeh yeh hota jaye */
+/* yeh wali animation main child apny parent div se ziada bahar bhi ja skta ha */
+
+
+
+.container {
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+.box {
+    background-color: black;
+    position: relative;
+    animation-name: boxx;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    /* infinite bhi de skty*/
+    width: 200px;
+    height: 200px;
+
+}
+
+/* is code se mainy spna element sqaure mai ghumaya on screen yumm! */
+
+@keyframes boxx {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 0px;
+        left: 250px;
+    }
+
+    50% {
+        top: 250px;
+        left: 250px;
+    }
+
+    75% {
+        top: 250px;
+        left: 0px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* animation: animation-name animation-duration animation-timing-function animation-dely animation-iteration-count animation-fill-mode */
+/* a shorthand technique to apply all at the same time */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* transform jis element ko krna ha coding udher hi hogi sirf, it can be done without position relative*/
+
+.container {
+    border: 2px solid red;
+    background-color: aqua;
+
+}
+
+.box {
+    background-color: black;
+    position: relative;
+    animation-name: boxx;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    width: 50px;
+    height: 50px;
+
+    transform: rotate(45deg);
+    /* scale se yeh element itna percentage chota hogaya and jo purani jagah thi iski wo gap ban  gyi, cute lg rha bad main */
+    transform: scale(50%);
+
+}
+
+/* hover wali cheez, koi ider hover kry to size chota hojaye hehehe */
+.box:hover {
+    transform: scale(2);
+    /*iska matlab hover hony pe apny size 2x hojayega */
+
+}

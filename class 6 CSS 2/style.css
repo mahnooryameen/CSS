@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+
+/* font family */
+
+/* idher class ko target kr k usky content ko by absolute link  font diya and us font k liye humny import bhi krwaya ha data from the google font  */
+.abc{
+    font-family: 'Rubik Iso', 'Courier New', Courier, monospace;
+}
+
+
+/* border  width style color */
+.aaa{
+    height: 50vh;
+    width: 50%;
+    color: bisque;
+    background-color: blue;
+    border-color: azure;
+    border-width: 12px;
+    border-style:double;
+}
+
+
+/* rem pehla vs em dusra*/
+
+.div1{
+    font-size: 4rem;}
+.you{
+    font-size: 5rem;
+} 
+
+
+ .div2{
+    font-size: 5em; }
+.yo{
+    font-size: 10em; }  
+
+/* OVERFLOW */
+/* bahar nikalny waly content ko handle krna */
+
+.overflow{
+width: 100px;
+height: 100px;
+border: 2px solid yellow;
+overflow: hidden;    /* auto, hidden, visible*/ /* overflow-y overflow-y */
+
+
+}
+
+/* padding */
+
+.padder{
+    border: 2px solid red;
+    background-color: aqua;
+    
+    /* padding matlab element ke charo taraf jagah free space banana inside any border */
+    /* top right bottom left TRBL */
+    padding: 100px 100px 100px 100px ;
+}
+
+/* shadow */
+.shadow{
+    text-shadow: 100px 20px 1px greenyellow;  /* x y blur color */
+}
+
+/* margin */
+.margin{
+
+border: 5px solid red;
+width: 300px; 
+margin: auto;   /*bachi hui jagah left and right main khud hi distribute hogii equally */
+
+}
+
+/* hover */
+span:hover{
+    background-color: yellow;
+    color: blueviolet;
+}
+
+a:link{
+    color: black;
+    background-color: aqua;
+}
+
+a:visited{
+    color:yellow;
+    background-color: black;
+}
+}

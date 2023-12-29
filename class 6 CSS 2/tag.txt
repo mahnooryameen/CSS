@@ -1,0 +1,24 @@
+@import url(");
+
+font-family: 'Rubik Iso', 'Courier New', Courier, monospace;
+
+border-color: azure;
+
+border-width: 12px;
+
+border-style:double;   
+
+em rem vh wh 
+
+overflow: hidden;    /* auto, hidden, visible*/ /* overflow-y overflow-y */
+
+padding: 100px 100px 100px 100px ;
+
+text-shadow: 100px 20px 1px greenyellow;  /* x y blur color */
+
+
+margin: auto;   /*bachi hui jagah left and right main khud hi distribute hogii equally */
+
+span:hover{css}
+
+

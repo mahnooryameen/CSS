@@ -1,0 +1,69 @@
+animation-name: boxx;
+*******************************************************
+animation-duration: 2s;
+*******************************************************
+animation-iteration-count: 3;
+
+*******************************************************
+
+    @keyframes boxx {
+    from {
+        width: 200px;
+
+    }
+
+    to {
+        width: 400px;
+    }
+}
+*****************************************************
+    animation-fill-mode: forwards;
+*****************************************************
+    animation-timing-function: ease-in;
+    /* shru main slow bad mai tez  */
+    animation-timing-function: ease-out;
+    /* shru main tez bad mai slow  */
+    animation-timing-function: ease-in-out;
+    /* shru main slow phir tez end mai slow  */
+******************************************************
+
+animation-delay: 3s;
+    /* iska matlab itny second k baa hamary browser pe yeh animation start hogi */
+
+************************************************************    
+
+@keyframes boxx {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 0px;
+        left: 250px;
+    }
+
+    50% {
+        top: 250px;
+        left: 250px;
+    }
+
+    75% {
+        top: 250px;
+        left: 0px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+*******************************************************************************************
+/* animation: animation-name animation-duration animation-timing-function animation-dely animation-iteration-count animation-fill-mode */
+/* a shorthand technique to apply all at the same time */
+*************************************************************************************************
+transform: rotate(45deg);
+****************************************************************************
+transform: scale(50%);       chota
+**************************************************************
+transform: scale(2);         bara 
